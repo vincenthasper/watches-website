@@ -49,7 +49,6 @@
 
 .museum-grid-item1:hover, .museum-grid-item2:hover, .museum-grid-item3:hover, .museum-grid-item4:hover, .museum-grid-item5:hover {
     transform: scale(0.96, 0.96);
-    transition: all 0.3s ease;
 }
 
 .museum-grid-item1 {
