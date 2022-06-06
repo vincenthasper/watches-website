@@ -215,7 +215,7 @@ input, div, span, a {
 .day, .hour, .minute, .second, .countdown-points {
     font-family: 'Cormorant Garamond', serif;
     text-transform: none;
-    font-size: 80px;
+    font-size: 96px;
 }
 
 /* styles brands section */
@@ -428,7 +428,7 @@ input, div, span, a {
     /* styles countdown section */
 
     .countdown-numbers {
-        font-size: 72px;
+        font-size: 56px;
     }
 
     /* styles brands section */
