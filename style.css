@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: scroll;
+
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;    
+}
+body.active {
+    overflow-y: hidden;
+}
+
+:root {
+    --black: black;
+    --white: white;
+    --border-white: #D2D2D7;
+    --gray: #4A5662;
+    --light-gray: #A3ABAF;
+    --background: #FBFBFD;
+    --blue: #0065CC;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: none;
+    font-weight: 500;
+}
+
+p {
+    text-transform: none;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--gray);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1268px;
+    margin: 0 auto;
+}
+
+input, div, span, a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* styles navigation menu */
+
+.nav-container {
+    background-color: var(--white);
+    position: fixed;
+    height: 48px;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 300;
+    padding: 0 24px;
+}
+
+.nav-container nav {
+    max-width: 1268px;
+    margin: 0 auto;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container nav a {
+    color: var(--black);
+}
+
+.nav-logo {
+    z-index: 300;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 300;
+}
+
+.nav-hamburger .line-1 {
+    display: block;
+    height: 1px;
+    width: 16px;
+    background-color: var(--black);
+    margin-bottom: 7px;
+
+    transition-property: transform, margin-bottom;
+    transition-delay: 0s, 0.16s;
+    transition-duration: 0.3s;
+}
+.nav-hamburger .line-2 {
+    display: block;
+    height: 1px;
+    width: 16px;
+    background-color: var(--black);
+    margin-top: 7px;
+
+    transition-property: transform, margin-top;
+    transition-delay: 0s, 0.16s;
+    transition-duration: 0.3s;
+}
+
+/* styles home hero section */
+
+.home-hero-section {
+    margin-top: 48px;
+    padding: 0 24px;
+}
+
+.home-hero-container {
+    max-width: 1268px;
+    margin: 0 auto;
+    height: 640px;
+
+    background-image: url(img/archive-1.webp);
+    background-size: cover;
+    background-position: top;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 24px;
+    gap: 8px;
+    color: var(--white);
+}
+
+.home-hero-section h1 {
+    font-size: 64px;
+}
+
+/* styles countdown section */
+
+.countdown-section {
+    margin-top: 48px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.countdown-container {
+    width: 100%;
+    max-width: 1268px;
+    margin: 0 auto;
+    padding: 48px 0;
+    border-top: 1px solid var(--border-white);
+    border-bottom: 1px solid var(--border-white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-heading {
+    color: var(--gray);
+}
+
+.countdown {
+    display: flex;
+    align-items: top;
+    gap: 8px;
+}
+
+.countdown li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.countdown-numbers-small-text {
+    color: var(--light-gray);
+}
+
+.day, .hour, .minute, .second, .countdown-points {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: none;
+    font-size: 96px;
+}
+
+/* styles brands section */
+
+.brands-section {
+    margin-top: 48px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+
+    margin-top: 24px;
+}
+
+.brands-grid-item1, .brands-grid-item2, .brands-grid-item3, .brands-grid-item4 {
+    width: auto;
+    height: 320px;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 16px;
+    gap: 8px;
+    color: var(--white);
+
+    transition: all 0.3s ease;
+}
+
+.brands-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    text-transform: none;
+}
+
+.brands-grid-item1 {
+    background-image: url(img/audemars-piguet.webp);
+}
+.brands-grid-item2 {
+    background-image: url(img/cartier.jpeg);
+}
+.brands-grid-item3 {
+    background-image: url(img/patek-philippe.webp);
+}
+.brands-grid-item4 {
+    background-image: url(img/rolex.webp);
+}
+
+.brands-grid-item1:hover, .brands-grid-item2:hover, .brands-grid-item3:hover, .brands-grid-item4:hover {
+    transform: scale(0.96, 0.96);
+    transition: all 0.3s ease;
+}
+
+/* styles more info section */
+
+.more-info-section {
+    margin-top: 48px;
+    padding: 0 24px;
+}
+
+.more-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.more-info-grid-item1, .more-info-grid-item2 {
+    width: auto;
+    height: 320px;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 24px;
+    gap: 8px;
+    color: var(--white);
+
+    transition: all 0.3s ease;
+}
+
+.more-info-grid-item1:hover, .more-info-grid-item2:hover {
+    transform: scale(0.96, 0.96);
+    transition: all 0.3s ease;
+}
+
+.more-info-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    text-transform: none;
+}
+
+.more-info-grid-item1 {
+    background-image: url(img/watching-1.webp);
+}
+.more-info-grid-item2 {
+    background-image: url(img/archive-1.webp);
+}
+
+/* styles footer section */
+
+.footer-section {
+    margin: 48px 0;
+    padding: 0 24px;
+
+    color: var(--gray);
+}
+
+.footer-container {
+    max-width: 1268px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+
+    /* styles navigation menu */
+
+    .nav-hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0vh;
+        background-color: var(--white);
+        gap: 0;
+        overflow: hidden;
+
+        transition: all 0.6s ease;
+    }
+
+    .nav-container.active .nav-links {
+        height: 100vh;
+    }
+
+    .nav-links li {
+        width: 100%;
+        padding: 0 24px;
+
+        transform: translateY(-48px);
+        opacity: 0;
+        transition: all 0.6s ease;
+    }
+    .nav-container.active .nav-links li {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .nav-links li:first-child {
+        margin-top: 96px;
+    }
+
+    .nav-links a {
+        font-family: 'Cormorant Garamond', serif;
+        text-transform: none;
+        font-weight: 600;
+        font-size: 56px;
+
+        padding: 16px 0;
+        width: 100%;
+    }
+
+    .nav-hamburger.active .line-1 {
+        margin-bottom: -1px;
+        transform: rotateZ(45deg);
+
+        transition-property: margin-bottom, transform;
+        transition-delay: 0s, 0.16s;
+        transition-duration: 0.3s;
+    }
+    .nav-hamburger.active .line-2 {
+        margin-top: -1px;
+        transform: rotateZ(-45deg);
+
+        transition-property: margin-top, transform;
+        transition-delay: 0s, 0.16s;
+        transition-duration: 0.3s;
+    }
+
+    /* styles hero section */
+
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    /* styles countdown section */
+
+    .countdown-numbers {
+        font-size: 72px;
+    }
+
+    /* styles brands section */
+
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);    
+    }
+
+    /* styles more info section */
+
+    .more-info-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .more-info-heading {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 468px) {
+
+    /* styles brands section */
+
+    .brands-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* styles footer section */
+
+    .footer-container {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+

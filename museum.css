@@ -1,0 +1,99 @@
+.museum-hero-section {
+    margin-top: 48px;
+    padding: 48px 24px;
+    text-align: center;
+}
+
+.museum-container {
+    max-width: 1268px;
+    margin: 0 auto;
+}
+
+.museum-hero-section h1 {
+    font-size: 64px;
+}
+
+/* museum grid section */
+
+.museum-grid-section {
+    margin-top: 48px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.museum-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+
+    margin-top: 24px;
+}
+
+.museum-grid-item1, .museum-grid-item2, .museum-grid-item3, .museum-grid-item4, .museum-grid-item5 {
+    width: auto;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 16px;
+    gap: 8px;
+    color: var(--white);
+
+    transition: all 0.3s ease;
+}
+
+.museum-grid-item1:hover, .museum-grid-item2:hover, .museum-grid-item3:hover, .museum-grid-item4:hover, .museum-grid-item5:hover {
+    transform: scale(0.96, 0.96);
+    transition: all 0.3s ease;
+}
+
+.museum-grid-item1 {
+    background-image: url(img/audemars-piguet.webp);
+}
+.museum-grid-item2 {
+    background-image: url(img/cartier.jpeg);
+}
+.museum-grid-item3 {
+    background-image: url(img/patek-philippe.webp);
+}
+.museum-grid-item4 {
+    background-image: url(img/rolex.webp);
+}
+.museum-grid-item5 {
+    background-image: url(img/Rolex-Day-Date-10.webp);
+}
+
+/* media queries */
+
+@media (max-width: 968px) {
+    /* styles museum grid section */
+
+    .museum-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* styles museum grid section */
+
+    .museum-hero-section h1 {
+        font-size: 48px;
+    }
+
+    .museum-grid {
+        grid-template-columns: repeat(2, 1fr);    
+    }
+}
+
+@media (max-width: 468px) {
+    /* styles museum grid section */
+
+    .museum-grid {
+        grid-template-columns: repeat(1, 1fr);    
+    }
+}

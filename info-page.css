@@ -1,0 +1,99 @@
+.info-section {
+    margin-top: 96px;
+    padding: 0 24px;
+}
+
+.info-section h1 {
+    font-size: 64px;
+}
+
+.info-section-info {
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--border-white);
+}
+
+.paragraph-section {
+    margin-top: 48px;
+    padding: 0 24px;
+}
+
+.info-images {
+    margin-top: 48px;
+    padding: 0 24px;
+}
+
+.info-images .container {
+    display: flex;
+    gap: 16px;
+}
+
+.info-images .image-left {
+    background-image: url(img/Rolex-Day-Date-10.webp);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 496px;
+}
+
+.images-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    gap: 16px;
+}
+
+.right-image-1, .right-image-2, .right-image-3, .right-image-4 {
+    width: auto;
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+}
+
+.right-image-1 {
+    background-image: url(img/rolex2.webp);
+}
+.right-image-2 {
+    background-image: url(img/rolex3.webp);
+}
+.right-image-3 {
+    background-image: url(img/rolex4.webp);
+}
+.right-image-4 {
+    background-image: url(img/rolex5.webp);
+}
+
+/* media queries */
+
+@media (max-width: 1068px) {
+
+    /* styles info section */
+
+    .info-section .container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .info-section img {
+        max-width: 100%;
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .info-section h1 {
+        font-size: 48px;
+    }
+
+    .info-images .container {
+        flex-direction: column;
+    }
+
+    .info-images .image-left {
+        width: 100%;
+    }
+
+    .images-right {
+        width: 100%;
+    }
+}

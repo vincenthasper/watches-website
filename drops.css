@@ -1,0 +1,35 @@
+.drops-countdown-section {
+    margin-top: 96px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.drops-countdown-container {
+    width: 100%;
+    max-width: 868px;
+    margin: 0 auto;
+    padding: 48px 0;
+    border-top: 1px solid var(--border-white);
+    border-bottom: 1px solid var(--border-white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drops-info-section {
+    margin-top: 96px;
+    padding: 0 24px;
+}
+
+.drops-info-container h2 {
+    font-size: 32px;
+}
+
+.drops-info-container {
+    max-width: 868px;
+    margin: 0 auto;
+
+    margin-bottom: 160px;
+}
+

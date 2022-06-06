@@ -1,0 +1,17 @@
+.brands-hero-section {
+    margin-top: 96px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.brands-hero-section h1 {
+    font-size: 64px;
+    color: var(--black);
+}
+
+
+@media (max-width: 768px) {
+    .brands-hero-section h1 {
+        font-size: 48px;
+    }
+}
