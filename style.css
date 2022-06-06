@@ -427,7 +427,9 @@ input, div, span, a {
 
     /* styles countdown section */
 
-    .countdown-numbers {
+    .day, .hour, .minute, .second, .countdown-points {
+        font-family: 'Cormorant Garamond', serif;
+        text-transform: none;
         font-size: 56px;
     }
 
