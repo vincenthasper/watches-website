@@ -104,6 +104,7 @@ input, div, span, a {
 
 .nav-logo {
     z-index: 300;
+    font-weight: 500;
 }
 
 .nav-links {
