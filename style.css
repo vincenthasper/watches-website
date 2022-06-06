@@ -273,7 +273,6 @@ input, div, span, a {
 
 .brands-grid-item1:hover, .brands-grid-item2:hover, .brands-grid-item3:hover, .brands-grid-item4:hover {
     transform: scale(0.96, 0.96);
-    transition: all 0.3s ease;
 }
 
 /* styles more info section */
@@ -309,7 +308,6 @@ input, div, span, a {
 
 .more-info-grid-item1:hover, .more-info-grid-item2:hover {
     transform: scale(0.96, 0.96);
-    transition: all 0.3s ease;
 }
 
 .more-info-heading {
